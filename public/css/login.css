@@ -1,0 +1,271 @@
+.noscroll {
+    overflow: hidden;
+}
+
+.hidden{
+    display:none;
+}
+.modalview{
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#login {
+    position: relative;
+    background-color: white;
+    width: 70%;
+    display: flex;
+    max-height: 100%;
+    overflow:auto;
+    font-size: 1.2em;
+    
+}
+#utente{
+    margin-right:10px;
+    
+
+}
+    #login img {
+        height: 100%;
+        width: 40%;
+        object-fit: cover;
+        
+      
+    }
+
+
+
+
+    #credenziali {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+.Username {
+    margin-left: 10%;
+    font-family: "Permanent Marker", cursive;
+    
+}
+
+
+.Password {
+    margin-left: 10%;
+    font-family: "Permanent Marker", cursive;
+}
+
+input.Username {
+    width: 80%;
+    margin-left: 10%;
+    
+}
+
+
+input.Password {
+    width: 80%;
+    margin-left: 10%;
+    
+}
+
+.Smemorato {
+    margin-left: 10%;
+    color: blue;
+    font-family: "Permanent Marker", cursive;
+
+}
+
+img#send {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    height: 25%;
+    width: initial;
+    object-fit: initial;
+}
+#contenuto {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 50%;
+    
+    
+}
+
+#Ghisa {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top: 10px;
+    left: 42%;
+    
+  
+   
+    
+}
+#login #close{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height:50px;
+    width:50px;
+   z-index:1;
+}
+#login #closecell {
+    display:none
+}
+
+#errore {
+    font-family: "Permanent Marker", cursive;
+    color:red;
+    margin-left:10%;
+}
+
+
+@media (max-width:800px) {
+
+    #login #close {
+        display:none;
+
+    }
+    #login #closecell{
+        display:initial;
+        width:20%;
+        
+    }
+
+    
+    .modalview {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0,0,0,0.9);
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #login {
+        position: relative;
+        background-color: white;
+        width: 100%;
+        height: 90%;
+        flex-direction: column;
+        overflow: auto;
+        max-width: initial;
+        max-height: 100%;
+    }
+
+    input.Username {
+        width: 100%;
+    }
+
+
+
+
+    input.Password {
+        width: 100%;
+    }
+
+    .Smemorato {
+        margin-left: 0%;
+       
+    }
+
+
+    #login img {
+        position:static;
+        width: 100%;
+        object-fit: cover;
+    }
+
+
+
+    #Ghisa {
+        position: static;
+        margin-top: 10px;
+        margin-left: 0%;
+    }
+
+
+    input.Username {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .Username {
+        margin-left: 0%;
+    }
+    .Password {
+        margin-left: 0%;
+    }
+
+    input.Password {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+  
+
+    #contenuto {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        width: 70%;
+    }
+    img#send {
+        width: initial;
+        object-fit: initial;
+        position: static;
+        margin-left: 90%;
+        width: 23%;
+    }
+    #errore {
+        font-family: "Permanent Marker", cursive;
+        color: red;
+        margin-left: 0%;
+    }
+
+
+}
+
+    @media (max-height:800px) {
+        #login {
+            width: 100%;
+            max-height: 100%;
+            overflow: auto;
+        }
+
+         #credenziali{
+             justify-content:center;
+            
+
+         }
+        #Ghisa {
+            font-family: "Permanent Marker", cursive;
+            font-weight: 400;
+            font-style: normal;
+            position: static;
+            top: 10px;
+            margin-left:0%;
+        }
+            #send {
+            bottom:2%;
+            right:2%;
+        }
+
+      
+    }
+

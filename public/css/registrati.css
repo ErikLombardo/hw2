@@ -1,0 +1,86 @@
+#contenuto {
+    display: flex;
+  height:100%;
+    width: 100%;
+    background-image: url('../registrazione/registrazione.png');
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    background-position: center 30%;
+    margin: 0;
+}
+article {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+}
+#dati {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 450px;
+    height: 380px;
+   
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.noscroll{
+    overflow:hidden;
+}
+#iniziamo {
+    font-family: "Permanent Marker", cursive;
+    font-size:1.3em;
+    margin-left:auto;
+    margin-right:auto;
+  
+}
+
+body{
+    margin:0px;
+}
+
+form div {
+    margin-top: 3%;
+    font-family: "Permanent Marker", cursive;
+}
+
+#registriamoci{
+    margin-top:15px;
+    position:relative;
+}
+form {
+    
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+ #invia{
+     width:90px;
+     position:absolute;
+     bottom:15px;
+     right:0px;
+     
+
+ }
+#centra {
+    display:flex;
+    justify-content: center;
+}
+
+
+input::placeholder {
+    font-family: "Permanent Marker", cursive;
+}
+input {
+    font-family: "Permanent Marker", cursive;
+}
+#errore{
+    position:absolute;
+    right:100px;
+    bottom:70px;
+    left:0px;
+    color:red;
+}
