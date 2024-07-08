@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\DB;
 class Controller_Allenatori extends Controller
 {
     public function RegisterTrainer(Request $request){
+       
         if (Session::has('user_id')){
         $request->validate([
             'annuale' => 'required',
@@ -24,7 +25,7 @@ class Controller_Allenatori extends Controller
             'trimestre' => 'required',
             'logo' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
-
+        
         $errore1=DB::table("allenatori")
         ->Where('email', $request->input('email'))
         ->first();
@@ -50,7 +51,7 @@ class Controller_Allenatori extends Controller
 
              $file->storeAs('public/Uploads', $fileName);
 
-          
+         
             $allenatore = new Allenatori();
                $allenatore-> logo = '../storage/Uploads/'. $fileName;
                  $allenatore->nomeallenatore= $request->input('nomeallenatore');
@@ -83,7 +84,8 @@ class Controller_Allenatori extends Controller
             return response()->json(['messaggio' => '']);
         }else {
 	return response()->json(['messaggio' => 'Errore durante il caricamento del file'], 500);
-        }        
+        }
+        
     }
 
     public function Ricerca(){

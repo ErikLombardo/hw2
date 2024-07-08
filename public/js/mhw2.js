@@ -47,7 +47,7 @@ for (const contact of Contacts) {
 function NewTrainer(event) {
    
     var form = document.forms['NuovoAllenatore'];
-    console.log(form);
+    
     const file = document.querySelector("input[type=file]").files[0];
     if (form.nomeallenatore.value.length == 0 ||
         form.discipline.value.length == 0 ||
@@ -213,9 +213,7 @@ function Visualizza_allenatore(json) {
             <span class="cadenza"> trimestre:       </span><span class="tariffa"> ${element.trimestre} </span></br ></br >
                             <span class="cadenza">semestre:     </span> <span class="tariffa">  ${element.semestre} </span></br ></br >
                             <span class="cadenza"> annuale:     </span>  <span class="tariffa"> ${element.annuale} </span></br >
-                        </div >
-
-
+                        </div>
                        <div class="info hidden">
                             <div>
                                 <span> Email: ${element.email} </span></br>
@@ -223,7 +221,6 @@ function Visualizza_allenatore(json) {
                                 <span> Sede: ${element.sede} </span></br>
                                 <div class="other_info">
                                   ${element.info}
-
                                 </div>
                             </div>
                         </div>

@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="{{asset('css/login.css')}}">
     <meta name="viewport"
           content="width=device-width, initial-scale=1">
-                <meta name="csrf-token" content="{{ csrf_token() }}">   
+                <meta name="csrf-token" content="{{csrf_token()}}">   
 </head>
 
 <body>
@@ -95,14 +95,11 @@
                         <input type="text" placeholder="inserisci il nome dell'allenatore" class="nomeallenatore intestazione" name="nomeallenatore">   <button class="contatta"> Contatta </button>
                         <input type="text" placeholder="inserisci le discipline trattate dell'allenatore" class="disciplineallenatore discipline" name="discipline">
                         <textarea placeholder="inserisci la descrizione" class="descrizione" name="descrizione"> </textarea>
-
                         <div class="tariffe">
                             <span class="cadenza"> trimestre:       </span><input type="text" placeholder="prezzo" class="tariffa" name="trimestre"> </br ></br >
                             <span class="cadenza">semestre:     </span> <input type="text" placeholder="prezzo" class="tariffa" name="semestre"></br ></br >
-                            <span class="cadenza"> annuale:     </span> <input type="text" placeholder="prezzo" class="tariffa" name="annuale"></br >
-
+                            <span class="cadenza"> annuale:     </span> <input type="text" placeholder="prezzo" class="tariffa" name="annuale"></br>
                         </div>
-
                         <div class="info">
                             <div>
                                 <span> Email: <input type="text" placeholder="Es. Farlocco@gmail.com" id="email" name="email"> </br></span>
@@ -139,7 +136,6 @@
                         <span> Sede: Catania, via passo Gravina </span></br>
                         <div class="other_info">
                             4 piano, suonare al dottor gnomo.
-
                         </div>
                     </div>
                 </div>
